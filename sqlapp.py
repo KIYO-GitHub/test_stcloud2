@@ -88,5 +88,7 @@ st.markdown('### 参考用')
 st.write('os.getcwd()：',os.getcwd())
 st.write("glob.glob('*')：",glob.glob('*'))
 st.write('os.name：', os.name) #OS名称：Windows->'nt', Linux->'posix'
-st.write('os.getlogin():', os.getlogin())#ログインユーザー名を取得
+# st.write('os.getlogin():', os.getlogin())#エラーが出る
 st.write('os.cpu_count() :', os.cpu_count()) #CPU数を取得
+st.write('親ディレクトリ：',os.path.dirname(os.getcwd()))
+st.write('親ディレクトリ内の全ファイル',glob.glob(os.path.dirname(os.getcwd())+'/*'))
